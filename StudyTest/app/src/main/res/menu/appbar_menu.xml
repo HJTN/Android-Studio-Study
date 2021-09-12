@@ -2,20 +2,20 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
-        android:id="@+id/actionSearch"
-        android:title="@string/action_search"
+        android:id="@+id/Search"
+        android:title="@string/appbar_search"
         android:icon="@drawable/ic_search"
         app:showAsAction="always"
         app:actionViewClass="android.support.v7.widget.SearchView"/>
 
     <item
-        android:id="@+id/actionFavorite"
+        android:id="@+id/favorite"
         android:icon="@drawable/ic_favorite_black_48dp"
-        android:title="@string/action_favorite"
+        android:title="@string/appbar_favorite"
         app:showAsAction="ifRoom" />
 
     <item
-        android:id="@+id/actionSettings"
-        android:title="@string/action_settings"
+        android:id="@+id/Settings"
+        android:title="@string/appbar_settings"
         app:showAsAction="never" />
 </menu>

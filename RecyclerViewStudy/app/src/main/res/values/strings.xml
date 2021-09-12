@@ -2,4 +2,7 @@
     <string name="app_name">RecyclerView Test</string>
     <string name="EditText">Enter a message</string>
     <string name="Button">Send</string>
+    <string name="action_favorite">Like</string>
+    <string name="action_settings">Setting</string>
+    <string name="action_search">Search</string>
 </resources>

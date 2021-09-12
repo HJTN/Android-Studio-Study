@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">StudyTest</string>
+    <string name="appbar_favorite">Favorite</string>
+    <string name="appbar_settings">Setting</string>
+    <string name="appbar_search">Search</string>
+    <string name="label_searchable">Searchable</string>
+    <string name="EditText">Enter a message</string>
+    <string name="Button">Send</string>
+</resources>
