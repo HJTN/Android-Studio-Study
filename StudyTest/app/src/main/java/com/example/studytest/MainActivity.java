@@ -23,8 +23,8 @@ public class MainActivity extends AppCompatActivity {
     private SearchView searchView;
     private ActivityMainBinding binding;
     private RecyclerView recyclerView;
-    private SimpleTextAdapter adapter;
-    private SimpleTextAdapter searchAdapter;
+    private SimpleTextAdapter madapter;
+    private SimpleTextAdapter sAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,8 +36,9 @@ public class MainActivity extends AppCompatActivity {
         recyclerView = binding.recyclerView;
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
-        adapter = new SimpleTextAdapter();
-        recyclerView.setAdapter(adapter);
+        madapter = new SimpleTextAdapter();
+        sAdapter = new SimpleTextAdapter();
+        recyclerView.setAdapter(madapter);
 
         // AppBar parts
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
@@ -49,8 +50,8 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 String text = binding.editText.getText().toString();
                 if(!text.equals("")) {
-                    adapter.addItem(text);
-                    adapter.notifyDataSetChanged();
+                    madapter.addItemTomData(text);
+                    madapter.notifyDataSetChanged();
 
                     binding.editText.setText("");
                 }
@@ -71,18 +72,23 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public boolean onQueryTextSubmit(String s) {
                 // Toast.makeText(MainActivity.this, s, Toast.LENGTH_SHORT).show();
-                searchAdapter = new SimpleTextAdapter();
 
-                ArrayList<String> stored = adapter.getArrayList();
-                for(int i = 0; i < stored.size(); i++) {
-                    if (stored.get(i).contains(s))
-                        searchAdapter.addItem(stored.get(i));
+                /*for(int i = 0; i < madapter.getItemCount(); i++) {
+                    if (madapter.getmData().get(i).contains(s))
+                        sAdapter.addItemTomData(madapter.getmData().get(i));
                 }
+                recyclerView.setAdapter(sAdapter);*/
                 return false;
             }
 
             @Override
             public boolean onQueryTextChange(String s) {
+                sAdapter.clearmData();
+                for(int i = 0; i < madapter.getItemCount(); i++) {
+                    if (madapter.getmData().get(i).contains(s))
+                        sAdapter.addItemTomData(madapter.getmData().get(i));
+                }
+                recyclerView.setAdapter(sAdapter);
                 return false;
             }
         });
@@ -106,7 +112,6 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public void onBackPressed() {
         if(!searchView.isIconified()) {
-            recyclerView.setAdapter(adapter);
             searchView.setIconified(true);
         }
         else

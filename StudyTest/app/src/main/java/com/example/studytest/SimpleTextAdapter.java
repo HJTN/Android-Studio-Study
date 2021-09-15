@@ -29,17 +29,20 @@ public class SimpleTextAdapter extends RecyclerView.Adapter<SimpleTextAdapter.Vi
         mData = new ArrayList<>();
     }
 
-    public void addItem(String item) {
+    public void addItemTomData(String item) {
         mData.add(item);
     }
 
-    public void addItem(int position, String item) {
+    public void addItemTomData(int position, String item) {
         mData.add(position, item);
     }
 
-    public ArrayList<String> getArrayList() {
+    public ArrayList<String> getmData() {
         return mData;
     }
+
+    public void clearmData() { mData.clear(); }
+
     @Override
     public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         Context context = parent.getContext();
