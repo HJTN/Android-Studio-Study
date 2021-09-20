@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">EnglishWordApp</string>
+    <string name="Edit_username">홍길동</string>
+    <string name="Edit_useremail">aa@aa.aa</string>
+    <string name="appbarSearch">Search</string>
+    <string name="appbarFavorite">Like</string>
+    <string name="appbarSetting">Settings</string>
+    <string name="BNhome">Home</string>
+    <string name="BNfavorite">Like</string>
+    <string name="BNsettings">Settings</string>
+</resources>

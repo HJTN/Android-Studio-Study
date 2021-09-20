@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">fragmentStudy</string>
+    <string name="appbarSearch">Search</string>
+    <string name="appbarFavorite">Like</string>
+    <string name="appbarSetting">Settings</string>
+    <string name="FirstFragmentBtn">Home</string>
+    <string name="SecondFragmentBtn">Like</string>
+    <string name="BNhome">Home</string>
+    <string name="BNfavorite">Like</string>
+    <string name="BNsettings">Settings</string>
+    <string name="ThirdFragmentBtn">Setting</string>
+</resources>

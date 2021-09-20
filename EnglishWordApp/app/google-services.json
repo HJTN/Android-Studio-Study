@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "550525884950",
+    "project_id": "englishwordapp-953a4",
+    "storage_bucket": "englishwordapp-953a4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:550525884950:android:1f477c6d28ce1a4f1b3337",
+        "android_client_info": {
+          "package_name": "com.example.englishwordapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "550525884950-sj62illcr04pjl50f09keh7i12df6mlq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.englishwordapp",
+            "certificate_hash": "1234567890098765432112345678900987654321"
+          }
+        },
+        {
+          "client_id": "550525884950-ceensgefhcnom48em8mgi8j63morv32n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBxF3ySs7eUk03ovVQhMZRpHlH1QMzRJxE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "550525884950-ceensgefhcnom48em8mgi8j63morv32n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
