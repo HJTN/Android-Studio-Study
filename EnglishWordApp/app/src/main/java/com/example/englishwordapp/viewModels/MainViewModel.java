@@ -49,8 +49,8 @@ public class MainViewModel {
             @Override
             public boolean onMenuItemClick(MenuItem item) {
                 switch (item.getItemId()) {
-                    case R.id.icSearch:
-                        Toast.makeText(context, "SearchIcon Selected!", Toast.LENGTH_SHORT).show();
+                    case R.id.appbarSearch:
+                        Toast.makeText(context, "SearchButton pushed!", Toast.LENGTH_SHORT).show();
                         return true;
                     case R.id.appbarSetting:
                         Toast.makeText(context, "SettingButton pushed!", Toast.LENGTH_SHORT).show();
