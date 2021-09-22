@@ -8,14 +8,11 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
 
-public class FirebaseUtil {
+public class FirebaseUserDataUtils {
     private static final String USER_PATH = "data-source/users";
 
     private static final FirebaseDatabase firebaseDatabase = FirebaseDatabase.getInstance();
     private static final DatabaseReference postsReference = firebaseDatabase.getReference(USER_PATH);
-
-    public FirebaseUtil() {
-    }
 
     public static void setPost(Integer userId, DtoUser dtoUser) {
         postsReference.child(userId+"").setValue(dtoUser);

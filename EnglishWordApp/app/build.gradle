@@ -26,8 +26,8 @@ android {
         targetCompatibility JavaVersion.VERSION_1_8
     }
     // ViewBinding 추가
-    viewBinding{
-        enabled = true
+    buildFeatures{
+        viewBinding = true
     }
 }
 

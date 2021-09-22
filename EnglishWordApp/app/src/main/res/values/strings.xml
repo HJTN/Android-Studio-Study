@@ -8,4 +8,8 @@
     <string name="BNhome">Home</string>
     <string name="BNfavorite">Like</string>
     <string name="BNsettings">Settings</string>
+    <string name="HomeFragmentBtn">Home</string>
+    <string name="FavoriteFragmentBtn">Like</string>
+    <string name="SettingFragmentBtn">Setting</string>
+    <string name="MainAppBar_name">단어장</string>
 </resources>

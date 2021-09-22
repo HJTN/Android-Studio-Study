@@ -23,6 +23,7 @@ import com.google.firebase.database.ValueEventListener;
 import java.util.HashMap;
 
 public class MainActivity extends AppCompatActivity {
+    private static final String PATH = "users";
 
     EditText et_user_name, et_user_email;
     Button btn_save;
@@ -63,16 +64,11 @@ public class MainActivity extends AppCompatActivity {
     
     // 파이어베이스 데이터 조회
     private void readUser() {
-        mDatabase.child("users").child("1").addValueEventListener(new ValueEventListener() {
+        mDatabase.child(PATH).addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 // Get Post object and use the values to update the UI
-                if(snapshot.getValue(User.class) != null) {
-                    User post = snapshot.getValue(User.class);
-                    Log.w("FireBaseData", "getData" + post.getData());
-                } else {
-                    Toast.makeText(MainActivity.this, "No Data...", Toast.LENGTH_SHORT).show();
-                }
+                
             }
 
             @Override

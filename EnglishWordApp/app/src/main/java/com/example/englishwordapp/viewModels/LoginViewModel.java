@@ -1,4 +1,4 @@
-package com.example.englishwordapp.viewModel;
+package com.example.englishwordapp.viewModels;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -7,9 +7,8 @@ import android.view.View;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.englishwordapp.databinding.ActivityLoginBinding;
-import com.example.englishwordapp.databinding.ActivityMainBinding;
 import com.example.englishwordapp.dtos.DtoUser;
-import com.example.englishwordapp.utils.FirebaseUtil;
+import com.example.englishwordapp.utils.FirebaseUserDataUtils;
 
 import java.util.HashMap;
 
@@ -20,7 +19,7 @@ public class LoginViewModel {
     private LayoutInflater layoutInflater;
     private Context context;
     private AppCompatActivity appCompatActivity;
-    private FirebaseUtil login_FButil;
+    private FirebaseUserDataUtils login_FButil;
 
     private Integer userId = 1;
 
@@ -30,7 +29,7 @@ public class LoginViewModel {
         this.appCompatActivity = appCompatActivity;
         this.activityLoginBinding = ActivityLoginBinding.inflate(layoutInflater);
 
-        login_FButil = new FirebaseUtil();
+        login_FButil = new FirebaseUserDataUtils();
 
         activityLoginBinding.btnSave.setOnClickListener(new View.OnClickListener() {
             @Override

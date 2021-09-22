@@ -1,11 +1,10 @@
-package com.example.englishwordapp.view;
+package com.example.englishwordapp.views;
 
 import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.englishwordapp.viewModel.LoginViewModel;
-import com.example.englishwordapp.viewModel.MainViewModel;
+import com.example.englishwordapp.viewModels.LoginViewModel;
 
 public class LoginActivity extends AppCompatActivity {
     private LoginViewModel loginViewModel;
