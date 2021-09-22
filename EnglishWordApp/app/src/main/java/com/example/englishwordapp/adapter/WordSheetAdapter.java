@@ -62,4 +62,16 @@ public class WordSheetAdapter extends RecyclerView.Adapter<WordSheetAdapter.View
             binding.itemRecyclerviewTV.setText(WordSheet);
         }
     }
+
+    public ArrayList<String> getWordSheets() {
+        return WordSheets;
+    }
+
+    public void addItemToSheets(String item) {
+        this.WordSheets.add(item);
+    }
+
+    public void clearItemsToSheets() {
+        this.WordSheets.clear();
+    }
 }

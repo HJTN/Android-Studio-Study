@@ -12,6 +12,7 @@ import com.example.englishwordapp.databinding.FragmentHomeBinding;
 import com.example.englishwordapp.repositorys.RepositoryWordSheet;
 
 public class HomeViewModel {
+    private static HomeViewModel homeViewModel;
 
     private LayoutInflater layoutInflater;
     private Context context;
@@ -39,7 +40,12 @@ public class HomeViewModel {
     }
 
     public static HomeViewModel getInstance(LayoutInflater layoutInflater, Context context) {
-        return new HomeViewModel(layoutInflater, context);
+        homeViewModel = new HomeViewModel(layoutInflater, context);
+        return homeViewModel;
+    }
+
+    public static HomeViewModel getInstance() {
+        return  homeViewModel;
     }
 
     public LayoutInflater getLayoutInflater() {

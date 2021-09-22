@@ -5,8 +5,7 @@
         android:id="@+id/icSearch"
         android:icon="@drawable/ic_search_24"
         android:title="@string/appbarSearch"
-        app:showAsAction="ifRoom|collapseActionView"
-        app:actionViewClass="androidx.appcompat.widget.SearchView"/>
+        app:showAsAction="ifRoom"/>
     <item
         android:id="@+id/appbarSetting"
         android:title="@string/appbarSetting"

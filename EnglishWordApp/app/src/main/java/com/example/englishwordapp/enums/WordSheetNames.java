@@ -1,5 +1,6 @@
 package com.example.englishwordapp.enums;
 
 public enum  WordSheetNames {
-    WordSheet
+    WordSheet1,
+    WordSheet2
 }

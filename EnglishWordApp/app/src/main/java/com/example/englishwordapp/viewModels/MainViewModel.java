@@ -9,10 +9,10 @@ import android.view.MenuItem;
 
 import android.view.View;
 import android.view.Window;
+
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
-import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.core.app.ActivityCompat;
@@ -51,10 +51,10 @@ public class MainViewModel {
                 switch (item.getItemId()) {
                     case R.id.icSearch:
                         Toast.makeText(context, "SearchIcon Selected!", Toast.LENGTH_SHORT).show();
-                        return false;
+                        return true;
                     case R.id.appbarSetting:
                         Toast.makeText(context, "SettingButton pushed!", Toast.LENGTH_SHORT).show();
-                        return false;
+                        return true;
                     default:
                         return false;
                 }
